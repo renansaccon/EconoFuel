@@ -12,107 +12,108 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
         android:text="@string/consumo_combust_vel_1"
+        app:layout_constraintBottom_toBottomOf="@+id/etComb1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/etComb1" />
 
     <TextView
         android:id="@+id/tvComb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
         android:text="@string/consumo_combust_vel_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvComb1" />
+        app:layout_constraintBottom_toBottomOf="@+id/etComb2"
+        app:layout_constraintStart_toStartOf="@+id/tvComb1"
+        app:layout_constraintTop_toTopOf="@+id/etComb2" />
 
     <TextView
         android:id="@+id/tvValorComb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
         android:text="@string/valor_litro_combust_vel_1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvComb2" />
+        app:layout_constraintBottom_toBottomOf="@+id/etValor1"
+        app:layout_constraintStart_toStartOf="@+id/tvComb2"
+        app:layout_constraintTop_toTopOf="@+id/etValor1" />
 
     <TextView
         android:id="@+id/tvValorComb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
         android:text="@string/valor_litro_combust_vel_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvValorComb1" />
+        app:layout_constraintBottom_toBottomOf="@+id/etValor2"
+        app:layout_constraintStart_toStartOf="@+id/tvValorComb1"
+        app:layout_constraintTop_toTopOf="@+id/etValor2" />
 
     <TextView
         android:id="@+id/tvResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/o_combust_vel_que_mais_compensa_s"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btComparar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btBusca1"
+        android:id="@+id/btBuscar1"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="16dp"
         android:text="@string/buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/etComb1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/etComb1"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/btBuscar2"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="13dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="16dp"
         android:text="@string/buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/etComb2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btBusca1" />
+        app:layout_constraintTop_toTopOf="@+id/etComb2" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etComb1"
         android:layout_width="100dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:hint="@string/km_l"
-        app:layout_constraintEnd_toStartOf="@+id/btBusca1"
         app:layout_constraintStart_toEndOf="@+id/tvComb1"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Comb1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColorHint="#546E7A"
+            tools:ignore="DuplicateSpeakableTextCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etComb2"
         android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="13dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
         android:hint="@string/km_l"
-        app:layout_constraintEnd_toStartOf="@+id/btBuscar2"
-        app:layout_constraintStart_toEndOf="@+id/tvComb2"
+        app:layout_constraintStart_toStartOf="@+id/etComb1"
         app:layout_constraintTop_toBottomOf="@+id/etComb1">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Comb2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etValor1"
         android:layout_width="100dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="10dp"
         android:hint="@string/r"
@@ -122,13 +123,16 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Valor1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColorHint="#546E7A"
+            tools:ignore="DuplicateSpeakableTextCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Valor2"
+        android:id="@+id/etValor2"
         android:layout_width="100dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="9dp"
         android:hint="@string/r"
@@ -136,9 +140,23 @@
         app:layout_constraintTop_toBottomOf="@+id/etValor1">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etValor2"
+            android:id="@+id/Valor2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btComparar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/comparar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

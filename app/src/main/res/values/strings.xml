@@ -7,5 +7,10 @@
     <string name="consumo_combust_vel_2">Consumo Combustível 2</string>
     <string name="valor_litro_combust_vel_1">Valor Litro Combustível 1</string>
     <string name="valor_litro_combust_vel_2">Valor Litro Combustível 2</string>
-    <string name="o_combust_vel_que_mais_compensa_s">O combustível que mais compensa é %s</string>
+    <string name="resultado"></string>
+    <string name="comparar">COMPARAR</string>
+    <string name="economia1">Sua economia será maior utilizando o combustível 1</string>
+    <string name="economia2">Sua economia será maior utilizando o combustível 2</string>
+    <string name="consumo_de_combust_veis">CONSUMO DE COMBUSTÍVEIS</string>
+    <string name="insira_um_valor">Insira um valor</string>
 </resources>

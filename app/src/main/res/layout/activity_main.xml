@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/consumo_combust_vel_1"
+        android:fontFamily="@font/poppins"
         app:layout_constraintBottom_toBottomOf="@+id/etComb1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/etComb1" />
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/consumo_combust_vel_2"
+        android:fontFamily="@font/poppins"
         app:layout_constraintBottom_toBottomOf="@+id/etComb2"
         app:layout_constraintStart_toStartOf="@+id/tvComb1"
         app:layout_constraintTop_toTopOf="@+id/etComb2" />
@@ -31,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/valor_litro_combust_vel_1"
+        android:fontFamily="@font/poppins"
         app:layout_constraintBottom_toBottomOf="@+id/etValor1"
         app:layout_constraintStart_toStartOf="@+id/tvComb2"
         app:layout_constraintTop_toTopOf="@+id/etValor1" />
@@ -40,15 +43,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/valor_litro_combust_vel_2"
+        android:fontFamily="@font/poppins"
         app:layout_constraintBottom_toBottomOf="@+id/etValor2"
         app:layout_constraintStart_toStartOf="@+id/tvValorComb1"
         app:layout_constraintTop_toTopOf="@+id/etValor2" />
 
     <TextView
         android:id="@+id/tvResultado"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/btComparar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -57,10 +64,13 @@
         android:id="@+id/btBuscar1"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="@string/buscar"
         app:layout_constraintBottom_toBottomOf="@+id/etComb1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etComb1"
         app:layout_constraintTop_toTopOf="@+id/etComb1"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -68,18 +78,21 @@
         android:id="@+id/btBuscar2"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="@string/buscar"
         app:layout_constraintBottom_toBottomOf="@+id/etComb2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etComb2"
         app:layout_constraintTop_toTopOf="@+id/etComb2" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etComb1"
         android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
         android:hint="@string/km_l"
         app:layout_constraintStart_toEndOf="@+id/tvComb1"
         app:layout_constraintTop_toTopOf="parent">
@@ -88,6 +101,7 @@
             android:id="@+id/Comb1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:inputType="numberDecimal"
             android:textColorHint="#546E7A"
             tools:ignore="DuplicateSpeakableTextCheck" />
@@ -96,8 +110,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etComb2"
         android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_height="65dp"
         android:layout_marginTop="8dp"
+
         android:hint="@string/km_l"
         app:layout_constraintStart_toStartOf="@+id/etComb1"
         app:layout_constraintTop_toBottomOf="@+id/etComb1">
@@ -106,6 +121,7 @@
             android:id="@+id/Comb2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:inputType="numberDecimal"
             android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -113,17 +129,18 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etValor1"
         android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="12dp"
+        android:layout_height="65dp"
         android:layout_marginTop="10dp"
         android:hint="@string/r"
         app:layout_constraintStart_toEndOf="@+id/tvValorComb1"
+        app:layout_constraintStart_toStartOf="@+id/etComb2"
         app:layout_constraintTop_toBottomOf="@+id/etComb2">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Valor1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:inputType="numberDecimal"
             android:textColorHint="#546E7A"
             tools:ignore="DuplicateSpeakableTextCheck" />
@@ -132,17 +149,17 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etValor2"
         android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="12dp"
+        android:layout_height="65dp"
         android:layout_marginTop="9dp"
         android:hint="@string/r"
-        app:layout_constraintStart_toEndOf="@+id/tvValorComb2"
+        app:layout_constraintStart_toStartOf="@+id/etValor1"
         app:layout_constraintTop_toBottomOf="@+id/etValor1">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Valor2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:inputType="numberDecimal"
             android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -153,10 +170,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="@string/comparar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

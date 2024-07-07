@@ -12,4 +12,6 @@
     <string name="economia2">Sua economia será maior utilizando o COMBUSTÍVEL 2</string>
     <string name="consumo_de_combust_veis">CONSUMO DE COMBUSTÍVEIS</string>
     <string name="insira_um_valor">Insira um valor</string>
+    <string name="econofuel">EconoFuel</string>
+    <string name="o_seu_app_de_economia_de_combust_vel">O seu app de economia de combustível</string>
 </resources>
